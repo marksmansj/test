@@ -13,7 +13,6 @@ podTemplate(label: label, serviceAccount: 'jenkins', containers: [
 ]) {
   node(label) {
 
-    stages {
         stage('test测试') {
             steps {
               
@@ -24,6 +23,5 @@ podTemplate(label: label, serviceAccount: 'jenkins', containers: [
                 }
             }
         }
-  }
 }
 }
