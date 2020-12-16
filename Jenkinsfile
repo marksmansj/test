@@ -2,7 +2,7 @@
 
 pipeline {
     agent {
-        label 'docker-slave-java'
+        label 'slave-${UUID.randomUUID().toString()}'
     }
 
     stages {
