@@ -17,7 +17,7 @@ podTemplate(label: label, serviceAccount: 'jenkins', containers: [
               
                 script {
                     println "import shared-library"
-                    result = helloworld 'test'
+                    result = helloworld 'sj'
                     println result
                 }
         }
