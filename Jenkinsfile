@@ -14,14 +14,12 @@ podTemplate(label: label, serviceAccount: 'jenkins', containers: [
   node(label) {
 
         stage('test测试') {
-            steps {
               
                 script {
                     println "import shared-library"
                     result = helloworld 'test'
                     println result
                 }
-            }
         }
 }
 }
