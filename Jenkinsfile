@@ -1,17 +1,12 @@
 @Library('shared-library') _
 
 pipeline {
-    options {
-        ansiColor('xterm')
-        timestamps()
-    }
     agent {
         label 'docker-slave-java'
     }
 
     stages {
         stage('test测试') {
-            when {}
             steps {
               
                 script {
