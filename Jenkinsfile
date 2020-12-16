@@ -26,3 +26,4 @@ podTemplate(label: label, serviceAccount: 'jenkins', containers: [
         }
   }
 }
+}
