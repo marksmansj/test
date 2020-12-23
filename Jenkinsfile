@@ -1,15 +1,7 @@
 @Library('shared-library') _
-slavepod()
- {
-  node(label) {
-
-        stage('test测试') {
-              
-                script {
-                    println "import shared-library"
-                    result = helloworld 'sj'
-                    println result
-                }
-        }
-}
-}
+buildDeclarative([
+    git_url:"https://github.com/marksmansj/test.git",
+    cmd:"ls -al",
+    input_id: "input1",
+    input_msg: "声明式流水线的input"
+    ])
